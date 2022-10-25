@@ -73,7 +73,7 @@ const colors: (RGBColor | HSLColor)[] = [];
 // Write a function called greet that accepts a single string OR an array of strings
 // It should print "Hello, <name>" for that single person OR greet each person in the array with the same format
 
-const greet = (input: (string | string[])) => {
+const greet = (input: (string | string[])): void => {
   if (typeof input === "string") {
     console.log(`Hello, ${input}`);
   } else {

@@ -1,33 +1,33 @@
+"use strict";
 // String Variable With Explicit Annotation
-var movieTitle = "Amadeus";
+let movieTitle = "Amadeus";
 movieTitle = "Arrival";
 movieTitle = 9; //This results in an error!
 movieTitle.toUpperCase();
 // Number Variable with explicit annotation
-var numCatLives = 9;
+let numCatLives = 9;
 numCatLives += 1;
 numCatLives = "zero"; //Error!
 // Explicitly typed boolean variable:
-var gameOver = false;
+let gameOver = false;
 gameOver = true;
 gameOver = "true"; //error!!
 // Type Inference
-var tvShow = "Olive Kitteridge";
+let tvShow = "Olive Kitteridge";
 tvShow = "The Other Two";
 tvShow = false;
-var isFunny = false;
+let isFunny = false;
 isFunny = true;
 isFunny = "asd";
 // the any type
-var thing = "hello"; //This is not a great idea!
+let thing = "hello"; //This is not a great idea!
 thing = 1;
 thing = false;
 thing();
 thing.toUpperCase();
-var movies = ["Arrival", "The Thing", "Aliens", "Amadeus"];
-var foundMovie;
-for (var _i = 0, movies_1 = movies; _i < movies_1.length; _i++) {
-    var movie = movies_1[_i];
+const movies = ["Arrival", "The Thing", "Aliens", "Amadeus"];
+let foundMovie;
+for (let movie of movies) {
     if (movie === "Amadeus") {
         foundMovie = "Amadeus";
     }

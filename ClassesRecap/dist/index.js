@@ -25,6 +25,17 @@ class Player {
   updateScore(newScore) {
     this.#score = newScore;
   }
+
+  get fullName() {
+    return `${this.first} ${this.last}`;
+  }
+
+  set score(newScore) {
+    if (newScore < 0) {
+      throw new Error("Score must be positive!");
+    }
+    this.#score = newScore;
+  }
 }
 
 const player1 = new Player("lassen", "farley");
